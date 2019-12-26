@@ -1,0 +1,448 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Bytes and Bits - CBL</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap" rel="stylesheet">
+
+
+	
+	<style>
+		hr {
+			background-color: black;
+			height: 30px;
+		}
+
+	p {
+	
+		font-size: 20px;
+		font-family: 'Roboto', sans-serif;
+
+	}
+
+	nav {
+		
+		font-family: 'Roboto', sans-serif;
+		font-stretch: condensed;
+	}
+
+	#bytesandbits {
+		font-family: 'Bebas Neue', cursive;
+		color: black;
+		font-size: xx-large;
+		background-color: white;
+		padding: 10%;
+		
+
+		
+	}
+
+	.buttonCustom {
+		background-color: black;
+    	box-shadow: rgb(221, 221, 221) 0px 0px 0px 1px inset;
+		color: white;
+		padding: 20px;
+		border-radius: 20%;
+	}
+
+	.subheading {
+		color: black;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 800;
+    }
+
+    #countdownClock {
+		color: white;
+		font-size: 300%;
+		text-align: center;
+		margin-top: -20px;
+		
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.countdownClock {
+		color: white;
+		font-size: 200%;
+		text-align: center;
+		margin-bottom: -40px;
+		font-family: 'Roboto', sans-serif;
+		
+	}
+
+	.original {
+		border-bottom: 2px solid white;
+	}
+    
+    .awsDay1 {
+        font-size: xx-large;
+        
+	}
+	
+	.responsive {
+  		width: 100%;
+  		max-width: 800px;
+  		height: auto;
+}
+
+
+	</style>
+
+	
+	</head>
+	<body">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+				<!-- Header -->
+					<header id="header" class="alt">
+						
+						<!-- TO DO:  customize font -->
+						<h1 id = "bytesandbits">Bytes and Bits <i class="fa fa-code" aria-hidden="true"></i>
+						</h1>
+						<!-- TO DO:  use FA icons instead of - -->
+						<!-- <p>Web Developer  &nbsp;  <i class="fa fa-square" aria-hidden="true" ></i> &nbsp;
+							App Developer &nbsp;   <i class="fa fa-square" aria-hidden="true"></i> &nbsp;
+							Alexa Developer &nbsp;   <i class="fa fa-square" aria-hidden="true"></i>  &nbsp;
+							AR/VR Developer  &nbsp;  <i class="fa fa-square" aria-hidden="true"></i> &nbsp;
+							AWS Accredited Instructor
+						</p> -->
+					</header>
+
+				<!-- TO DO: Countdown clock -->
+				<p class = "countdownClock">Countdown to <br><img class="responsive" src = "images/CBL logo.JPG"></p>
+				<hr class = "original">
+				<div id="countdownClock"></div>
+
+				<script>
+				// Set the date we're counting down to
+				var countDownDate = new Date("Feb 3, 2020 017:00:00").getTime();
+				
+				// Update the count down every 1 second
+				var x = setInterval(function() {
+				
+				  // Get today's date and time
+				  var now = new Date().getTime();
+					
+				  // Find the distance between now and the count down date
+				  var distance = countDownDate - now;
+					
+				  // Time calculations for days, hours, minutes and seconds
+				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+					
+				  // Output the result in an element with id="demo"
+				  document.getElementById("countdownClock").innerHTML = days + "d " + hours + "h "
+				  + minutes + "m " + seconds + "s ";
+					
+				  // If the count down is over, write some text 
+				  if (distance < 0) {
+					clearInterval(x);
+					document.getElementById("demo").innerHTML = "EXPIRED";
+				  }
+				}, 1000);
+				</script>
+
+				<!-- TO DO:  all navs on one row -->
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+                            <li><a href="index.html" class="active">Home</a></li>
+                            <li><a href="#intro" class="active">Upcoming Events!</a></li>
+							<li><a href="#first">Web or App Development</a></li>
+							<li><a href="#second">Alexa Development</a></li>
+							<li><a href="#third">AR/VR Development</a></li>
+							<li><a href="#fourth">AWS and Cloud Computing Training</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Day 1 -->
+							<section id="intro" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+										<img class = "responsive" src = "images/CBL_comic.jpg">
+											
+                                        </header>
+                                        <h2>FAQs</h2>
+										<ul class = "awsDay1">
+											<li><span style = "font-size:xx-large; font-weight: bolder;"> Q:</span>  What is <strong>Create - Build - Learn?</strong> </li>
+											<li style="list-style: none;"><span style = "font-size:xx-large; font-weight: bolder;"> A:</span> In  Create - Build - Learn (CBL) we'll learning about Amazon Web Services (AWS) tools and resources to create projects using  <ul>
+													 <li style="list-style: circle;">Sumerian to learn about AR/VR</li>
+													 <li style="list-style: circle;">RoboMaker to learn about Robotics</li>
+													 <li style="list-style: circle;">Gaming Resources</li>
+													 <li style="list-style: circle;">IoT Resources</li>
+													</ul>
+
+											</li> 
+
+										</ul>
+
+										
+										<ul class = "awsDay1">
+											<li><span style = "font-size:xx-large; font-weight: bolder;"> Q:</span>  Who is hosting and teaching <strong>Create - Build - Learn</strong>? </li>
+											<li style="list-style: none;"><span style = "font-size:xx-large; font-weight: bolder;"> A:</span> <a href = "https://www.hocking.edu/">Hocking College</a> will be hosting the classes at their campus in Nelsonville Ohio.  <a href = "https://www.linkedin.com/in/tashapenwell/">Tasha Penwell</a> is teaching the classes on Mondays from 5:30p - 6:30p.  <i>Class attendance is optional and not required to earn digital badges</i> <br>
+												<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3081.159457749637!2d-82.2237696843311!3d39.443127779490155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88480a7efccab01f%3A0x77840b2cb2d1021!2sHocking%20College!5e0!3m2!1sen!2sus!4v1577375552247!5m2!1sen!2sus" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+											</li> 
+
+										</ul>
+
+										<ul class = "awsDay1">
+											<li><span style = "font-size:xx-large; font-weight: bolder;"> Q:</span>  When is <strong>Create - Build - Learn</strong>? </li>
+											<li style="list-style: none; list"><span style = "font-size:xx-large; font-weight: bolder;"> A:</span> We will be hosting classes in person on Mondays 5:30pm - 6:30pm.  The curriculum is 100% online and class attendance is optional.  If students are not able to attend class in person, the instructor (Tasha Penwell) will be available via online meetings, text or email.  The topics schedule will be :</li>
+											
+											<li style = "list-style: circle;"><strong>Sumerian (Feb 3, 10, 17, 24)</strong></li>
+
+											<li style = "list-style: circle;"><strong>RoboMaker (Mar 2, 9, 16, 23, 30)</strong></li>
+
+											<li style = "list-style: circle;"><strong>IoT (Apr 6, 13, 20, 27)</strong></li>
+
+											<li style = "list-style: circle;"><strong>Gaming (May 4, 11, 18, 25)</strong></li>
+											<br>
+											<br>
+
+											<a href = "http://createbuildlearnaws.s3-website-us-east-1.amazonaws.com/" class="buttonCustom">Learn more and Register</a>
+												
+
+											</li> 
+
+										</ul>
+										
+									</div>
+									
+								</div>
+                            </section>
+                            
+ 
+						<!-- creates a thicker divider between upcoming events and other sections -->
+						<hr>
+
+							
+						<!-- First Section -->
+							<section id="first" class="main special">
+								<header class="major">
+									<h1 style = "font-weight: 900">Web and App Development</h1>
+								</header>
+								<ul class="features">
+									<li>
+										<span class="icon solid major style1 fa-code"></span>
+										<h2 class = "subheading">Flexible on Time and Looking for Economical Solution?</h2>
+										<p>Hocking College's Web/App Development program works with individuals and businesses looking to create a website or mobile app.</p>
+										<p>As part of our curriculum we work with real customers and real needs to create a website or mobile application based on their organization's needs.</p>
+										<p>Since this is a curriculum based project, time to completion is built in with the class structure and can take longer to complete but costs related to building and coding the app are very economical.</p>
+									
+
+									</li>
+									<li>
+										<span class="icon major style2 fa-copy"></span>
+										<h2 class = "subheading">Timely and Economical</h3>
+										<p>If you have less flexibility on time but are still looking for an economical solution to create your website or mobile application - our students are available to work independently as a freelancer for you! Our students have the resources and support of Hocking College resources and staff experience to provide resources as the need arises for your project</p>
+									</li>
+									<li>
+										<span class="icon major style3 fa-gem"></span>
+										<h2 class = "subheading">Looking for More Experience?</h3>
+										<p>We have a pool of Web/App Development and Multimedia graduates are available for freelancing jobs.</p>
+									</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+                                            <li><a href="mailto:bytesandbits@gmail.com?Subject=Hire?Web?App?Development" class="buttonCustom">Email to Learn More</a></li>
+									
+									
+                                            <li><a href="sms://+17403001684?body=I%27m%20interested%20in%20Hiring%Web/App%Developer.%Please%20contact%20me." class = "buttonCustom">Send a SMS message to Learn More</a>
+                                            </li>
+									</ul>
+								</footer>
+							</section>
+
+						<hr>
+
+						<!-- Second Section -->
+							<section id="second" class="main special">
+								<header class="major">
+									<h1 style = "font-weight: 900">Alexa Development</h1>
+									<p>Alexa is Amazon’s cloud-based voice service available on more than 100 million devices from Amazon and third-party device manufacturers. With Alexa, you can build natural voice experiences that offer customers a more intuitive way to interact with the technology they use every day. </p>
+								</header>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/DOWXIWJF3lk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<ul class = "features">
+								<li>
+									<span class="icon solid major style1 fa-code"></span>
+									<h2 class = "subheading">Flexible on Time and Looking for Economical Solution?</h3>
+									<p>Hocking College's Web/App Development program works with individuals and businesses looking to add voice interface to promote and share their product.</p>
+									<p>As part of our curriculum we work with real customers and real needs to create an Alexa Skill based on their organization's needs.</p>
+									<p>Since this is a curriculum based project, time to completion is built in with the class structure and can take longer to complete but costs related to building and coding the Alexa Skill are very economical.</p>
+								</li>
+								<li>
+									<span class="icon major style2 fa-copy"></span>
+									<h2 class = "subheading">Timely and Economical</h3>
+									<p>If you have less flexibility on time but are still looking for an economical solution to create your Alexa Skill - our students are available to work independently as a freelancer for you! Our students have the resources and support of Hocking College resources and staff experience to provide resources as the need arises for your project</p>
+									</li>
+								<li>
+								<span class="icon major style3 fa-gem"></span>
+									<h2 class = "subheading">Looking for More Experience?</h3>
+									<p>We have a pool of Web/App Development and Multimedia graduates are available for freelancing jobs.</p>
+								</li>
+
+								<li>
+
+								</li>
+								</ul>
+								<footer class="major">
+									<ul class="actions special">
+                                            <li><a href="mailto:bytesandbits@gmail.com?Subject=Hire?Alexa?Developer" class="buttonCustom">Email to Learn More</a></li>
+									
+									
+                                            <li><a href="sms://+17403001684?body=I%27m%20interested%20in%20Hiring%Alexa%Developer.%Please%20contact%20me." class ="buttonCustom">Send a SMS message to Learn More</a>
+                                                </li>
+									</ul>
+								</footer>
+							</section>
+
+						<hr>
+
+						<!-- Third Section -->
+						<!-- TO DO:  new id instead of "second" -->
+						<section id="third" class="main special">
+								<header class="major">
+									<h1 style = "font-weight: 900">AR/VR Development</h1>
+									<p>Sumerian is Amazon’s tool to create engaging 3D front-end experiences and is integrated with AWS services to provide easy access to machine learning, chatbots, code execution and more. </p>
+								</header>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/70ByG28u6aI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								<ul class = "features">
+								<li>
+									<span class="icon solid major style1 fa-code"></span>
+									<h2 class = "subheading">Flexible on Time and Looking for Economical Solution?</h3>
+									<p>Hocking College's Web/App Development program works with individuals and businesses looking to add AR or VR interface to promote and share their product.</p>
+									<p>As part of our curriculum we work with real customers and real needs to create an AR/VR Experience based on their organization's needs.</p>
+									<p>Since this is a curriculum based project, time to completion is built in with the class structure and can take longer to complete but costs related to building and coding the AR/VR Experience are very economical.</p>
+								</li>
+								<li>
+									<span class="icon major style2 fa-copy"></span>
+									<h2 class = "subheading">Timely and Economical</h3>
+									<p>If you have less flexibility on time but are still looking for an economical solution to create your AR/VR Experience - our students are available to work independently as a freelancer for you! Our students have the resources and support of Hocking College resources and staff experience to provide resources as the need arises for your project</p>
+									</li>
+								<li>
+								<span class="icon major style3 fa-gem"></span>
+									<h2 class = "subheading">Looking for More Experience?</h3>
+									<p>We have a pool of Web/App Development and Multimedia graduates are available for freelancing jobs.</p>
+								</li>
+                            </ul>
+                            <footer class="major">
+                                    <ul class="actions special">
+                                        <li><a href="mailto:bytesandbits@gmail.com?Subject=Hire?AR/VR?Developer" class="buttonCustom">Email to Learn More</a></li>
+                                        
+                                        
+                                        <li><a href="sms://+17403001684?body=I%27m%20interested%20in%20Hiring%AR/VR%Developer.%Please%20contact%20me." class ="buttonCustom">Send a SMS message to Learn More</a>
+                                                </li>
+                                    </ul>
+                                    </footer>
+    
+
+						<hr>
+
+						<!-- Fourth Section -->
+						<!-- TO DO:  new id instead of "second" -->
+						<section id="fourth" class="main special">
+								<header class="major">
+									<h1 style = "font-weight: 900">AWS and Cloud Computing Training & Resources</h1>
+									<p>Amazon Web Services (AWS) has over 170 resources ranging from databases, gaming, voice technology and more. </p>
+									<p>Get started in your own career with AWS Certification or are looking for resources to implemenmt AWS into your own organization for cost savings and global expansion by reaching out to Hocking College and AWS Academy resources.</p>
+								</header>
+								<iframe width="560" height="315" src="https://www.youtube.com/embed/Vx1AqGsnndI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+
+								<footer class="major">
+                                        <ul class="actions special">
+                                        <li><a href="mailto:bytesandbits@gmail.com?Subject=Hire?AWS?for?Cloud?Services?or?Certification" class="buttonCustom">Email to Learn More</a></li>
+                                        
+                                        
+                                        <li><a href="sms://+17403001684?body=I%27m%20interested%20in%20Hiring%AWS%for%Cloud%Services%or%Certification.%Please%20contact%20me." class = "buttonCustom">Send a SMS message to Learn More</a>
+                                                </li>
+							</section>
+
+						<!-- Get Started -->
+                        <section id="cta" class="main special">
+								<header>
+									<h2 class = "subheading">Learn More</h2>
+							<ul class = "features">
+									<li>
+										<span class="icon major style2 fa-user-circle"></span>
+										<p>Interested in hiring?</p>
+
+										
+										<a href="generic.html" class="buttonCustom primary">Get Started</a>
+									</li>
+
+									<li>
+										<span class="icon major style2 fa-users"></span>
+										<p>Interested in joining our team?</p>
+
+										<a href="generic.html" class="buttonCustom">Learn More</a>
+									</li>
+							</ul>
+								</header>
+
+							</section>
+					</div>
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="buttonCustom">Learn More</a></li>
+							</ul>
+						</section>
+						<section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="countdownClock.js"></script>
+
+	</body>
+</html>
