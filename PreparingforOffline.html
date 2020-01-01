@@ -1,0 +1,360 @@
+<!DOCTYPE HTML>
+<!--
+	Stellar by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<i class="fa fa-code" aria-hidden="true"></i><title>Bytes and Bits</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap" 		rel="stylesheet">
+		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+
+	
+	<style>
+		hr {
+			background-color: black;
+			height: 30px;
+		}
+
+	p {
+	
+		font-size: 20px;
+		font-family: 'Roboto', sans-serif;
+
+	}
+
+	nav {
+		
+		font-family: 'Roboto', sans-serif;
+		font-stretch: condensed;
+	}
+
+	#bytesandbits {
+		font-family: 'Bebas Neue', cursive;
+		color: black;
+		font-size: xx-large;
+		background-color: white;
+		padding: 10%;
+		margin-bottom: -140px;
+		
+
+		
+	}
+
+	.buttonCustom {
+		background-color: black;
+    	box-shadow: rgb(221, 221, 221) 0px 0px 0px 1px inset;
+		color: white;
+		padding: 20px;
+		border-radius: 20%;
+	}
+
+	.subheading {
+		color: black;
+		font-family: 'Roboto', sans-serif;
+		font-weight: 800;
+	}
+
+	#countdownClock {
+		color: white;
+		font-size: 300%;
+		text-align: center;
+		margin-top: -20px;
+		
+		font-family: 'Roboto', sans-serif;
+	}
+
+	.countdownClock {
+		color: white;
+		font-size: 200%;
+		text-align: center;
+		margin-bottom: -40px;
+		font-family: 'Roboto', sans-serif;
+		
+	}
+
+	.original {
+		border-bottom: 2px solid white;
+	}
+
+	.video {
+		border-radius: 8px;
+		border: 0;
+		display: inline-block;
+		position: relative;
+		padding-left: 10%;
+	}
+
+		.video  {
+			border-radius: 8px;
+			display: block;
+		}
+
+
+	
+	</style>
+
+	
+	</head>
+	<body>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				
+				<!-- Header -->
+					<header id="header" class="alt">
+						
+						<!-- TO DO:  customize font -->
+						<h1 id = "bytesandbits">Bytes and Bits <i class="fa fa-code" aria-hidden="true"></i>
+						</h1>
+						
+					</header>
+
+
+				
+
+				<!-- TO DO:  all navs on one row -->
+				<!-- Nav -->
+					<nav id="nav">
+						<ul>
+							<li><a href="index.html" class="active">Home</a></li>
+							<li><a href="#serviceWorkers" class="active">Service Workers</a></li>
+							<li><a href="#browserSupport">Browser Support</a></li>
+							<li><a href="#registering">Registering</a></li>
+							<li><a href="#featureDetection">Feature Detection</a></li>
+							<li><a href="#propertyTest">Property Test</a></li>
+							<li><a href="#scope">Scope</a></li>
+							<li><a href="#promises">Promises</a></li>
+						</ul>
+					</nav>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Introduction -->
+							<section id="serviceWorkers" class="main">
+								<div class="spotlight">
+									<div class="content">
+										<header class="major">
+											<h1 style = "font-weight: 900">Service Workers</h1>
+											<span class = "fa fa-life-ring fa-5x"
+											>
+										</header>
+										<ul>
+											<li>Make working offline possible</li>
+											<li>Are a JavaScript file</li>
+											<li>Unlike other JavaScript files, service workers don't interact with the DOM (Document Object Manager)</li>
+											<li>Even though cannot access the DOM, service workers have access to the fundamental innter workings of a browser</li>
+											<li>Leave instructions for the browser that will be excecuted before the request from the user is sent</li>
+											<li>The difference between service worker files and other JavaScript files is that other JavaScript files are executed after it's been downloaded from the server.  With service workers, the file is executed before anything else happens.</li>
+											<li>Services workers tell the browser <i>"If user asks for this particular URL, run this JavaScript file first."</i>   This is why service workers don't access the DOM.  It can't manipulate the DOM if there's no documents yet.</li>
+											<li>There are two policies that website must follow for service workers to work.
+												<ol>
+													<li>Service Worker file must come from the same origin.  If your website is www.hocking.edu your service worker has to be from the same folders the website is on.  You can't use another service (AWS S3 storage for example) to host the files on.</li>
+													<li>The website has to be secured with HTTPS protocol - not HTTP</li>
+												</ol>
+											</li>
+										</ul>
+										
+
+						<!-- creates a thicker divider between upcoming events and other sections -->
+						<hr>
+
+							
+						<!-- First Section -->
+							<section id="browserSupport" class="main 	">
+								<header class="major">
+									<h1 style = "font-weight: 900">Browser Support</h1>
+								</header>
+								
+
+										<ul>
+											<li>The client (user agent) is the browser.</li>
+											<li>The browser is a piece of software that acts on behalf of the user</li>
+											<li>Just like anything else, browser support of service workers can vary so resources like <a href="https://caniuse.com/#search=service%20worker">caniuse.com</a> is a great way to check which browsers support service workers</li>
+											<img src = "images/canIUse.JPG" width="45%vw" height="45%vh" ><br> <span style = "font-size: small"><strong> The above image is the support as of December 31, 2019.</strong></span>
+											<li>The client (user agent) must first visit the website before the service worker is installed</li>
+											<li>If the client's browser supports service workers - that's great!  If the browser doesn't support it - no big deal, the client will just ignore the file and go on accessing the website through normal methods.</li>
+
+										</ul>
+										<h3>Below is a diagram showing how a user makes a request from the user agent (their computer).  You'll see that it goes through infrastructure (cables, towers, satellites) to the web server for the website they are trying to access.</h3>
+										<img src = "images/browserNetwork.jpg"> Full slideshow at <a href="https://www.slideshare.net/TashaPenwell/service-workers-and-their-role-in-apps-213372414">Service Workers and Their Role in Apps</a>
+										<br>
+										<br>
+										<br>
+										<h3>If a service worker is used, the request from the user goes to Service Worker before going to the infrastructure of cables, towers and satellites to go to the website.  The request from the user agent (computer) sees the Service Worker file and stops and waits for further instructions.</h3>
+										<img src = "images/browserNetworkServiceWorker.jpg">Full slideshow at <a href="https://www.slideshare.net/TashaPenwell/service-workers-and-their-role-in-apps-213372414">Service Workers and Their Role in Apps</a>
+										<br>
+											
+									
+
+									</li>
+									
+							</section>
+
+						<hr>
+
+						<!-- Second Section -->
+							<section id="registering" class="main ">
+								<header class="major">
+									<h1 style = "font-weight: 900">Registering Service Workers</h1>
+									<h2>Registering a Service Worker</h2>
+									<ol>
+										<li>Create a JavaScript file named <i>serviceworker.js</i></li>
+										<li>The file <i>serviceworker.js</i> <strong><u>must</u></strong> be in same folder as the website.</li>
+										<li>The file <i>serviceworker.js</i> should be stored in the root directory and not in any subfolders in the website</li>
+										<li>The customer/client computer must visit the website so that the <i>serviceworker.js</i> file is downloaded to their computer for future visits to the website.</li>
+										<li>During future visits to the website, the the browser is told <i><strong>"See that service worker script.  Install it please."</strong></i>
+									</ol>
+
+									<h3>Registration Code Elements</h3>
+									<ul>
+										<li>Registration can be done via a link element in the head section or declare service workers using JavaScript.</li>
+										<li>If the code is in the head of the HTML document and the browser doesn't support it, it's just ignored - no harm, no foul.</li>
+										<li>If the code is inserted via JavaScript code the browser freaks out and throw an error message.</li>
+										<h3 span style = "font-size: small"><strong>Below image is showing element inserted in the head section</strong></h3>	
+										<img src="images/htmlLinkServiceWorker.JPG" width="45%vw" height="45%vh">
+
+										<h3 span style = "font-size: small"><strong>Below image is showing script inserted at the bottom of the HTML file</h3></strong>
+										<img src = "images/jsLinkServiceWorker.JPG" width="45%vw" height="45%vh">
+										
+
+									</ul>
+
+
+
+
+
+								</header>
+								
+						<hr>
+
+						<!-- Third Section -->
+						<!-- TO DO:  new id instead of "second" -->
+						<section id="featureDetection" class="main ">
+								<header class="major">
+									<h1 style = "font-weight: 900">Feature Detection</h1>
+									<h2>Feature Detection</h2>
+									<ul>
+										<li>To prevent errors from happening when calling upon service worker we can first ask the browser if the feature exists - this is <strong><u></u>feature detection</u></strong></li>
+										<li>Feature detection can be applied to almost anything available in JavaScript</li>
+
+									</ul>
+
+								</header>
+
+						<hr>
+
+						<!-- Fourth Section -->
+						<!-- TO DO:  new id instead of "second" -->
+						<section id="propertyTest" class="main ">
+								<header class="major">
+									<h1 style = "font-weight: 900">Property Test</h1>
+									<h2>Property Test</h2>
+									<ul>
+										<li>With <strong>Feature Detction</strong>, the browser checks for existance of property called <strong>serviceWorker</strong> that belongs to the navigate object</li>
+										<li>If it is an older browser that does not support <strong>navigator.serviceWorker</strong> it comes back as undefined because there's no property "serviceWorker".</li>
+										<li>If it is a newer browser that does have navigator.serviceWorker which means it's supported</li>
+								</header>
+								
+
+			<hr>
+
+						<!-- Fifth Section -->
+						<section id="scope" class="main ">
+							<header class="major">
+								<h1 style = "font-weight: 900">Scope</h1>
+								<h2>Scope</h2>
+								<ul>
+									<li>The URL syntax will define the scope of the service worker</li>
+									<li>By default the scope is based on where put the service worker in the script.  This is why the file should be in the root directory to cover all the files within the website.</li>
+
+							</header>
+							
+
+		<hr>
+
+						<!-- Sixth Section -->
+						<section id="promises" class="main ">
+							<header class="major">
+								<h1 style = "font-weight: 900">Promises</h1>
+								<h2>Promises</h2>
+								<ul>
+									<li>When a browser is accessing a website for the first time, it takes a few moments for the website to come through.  This is because the browser is doing the following:  </li>
+									<ol>
+										<li>Verifying if the site is running on HTTPS or localhost</li>
+										<li>Check if the service worker script is on the same domain as the current site</li>
+										<li>The browser will try to fetch the service worker script and read through it</li>
+									</ol>
+									<li>The process doesn't take long but we want to avoid the browser freezing while performing these tasks so we execute the <strong>register method</strong> asynchronously.  While this is great - what if we want to provide more instructions after all the processing is done?  That's where <strong><u>promises</u></strong> come in</li>
+									<li><strong>Promise</strong> is an object with a built-in method <strong><u>then</u></strong></li>
+									<li>The function we put in the <strong>then method</strong> will only execute when the promise has finished all the tasks and thereform the <i>"the promise has been fulfilled"</i></li>
+									<li>If something is <strong><i>rejected</i></strong> in the <strong>promise</strong> does not work and the "promise is not fulfilled" there is a corresponding method called the <strong><u>catch method</u></strong>.</li>
+									<li>In the <strong>catch method</strong> we can put a function to perform if the "promise is not fulfilled"</li>
+
+							</header>
+							
+
+		<hr>
+
+
+							</section>
+
+					</div>
+
+
+					  </div>	
+
+				<!-- Footer -->
+					<!-- <footer id="footer">
+						<section>
+							<h2>Aliquam sed mauris</h2>
+							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
+							<ul class="actions">
+								<li><a href="generic.html" class="buttonCustom">Learn More</a></li>
+							</ul>
+						</section> -->
+						<!-- <section>
+							<h2>Etiam feugiat</h2>
+							<dl class="alt">
+								<dt>Address</dt>
+								<dd>1234 Somewhere Road &bull; Nashville, TN 00000 &bull; USA</dd>
+								<dt>Phone</dt>
+								<dd>(000) 000-0000 x 0000</dd>
+								<dt>Email</dt>
+								<dd><a href="#">information@untitled.tld</a></dd>
+							</dl>
+							<ul class="icons">
+								<li><a href="#" class="icon brands fa-twitter alt"><span class="label">Twitter</span></a></li>
+								<li><a href="#" class="icon brands fa-facebook-f alt"><span class="label">Facebook</span></a></li>
+								<li><a href="#" class="icon brands fa-instagram alt"><span class="label">Instagram</span></a></li>
+								<li><a href="#" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
+								<li><a href="#" class="icon brands fa-dribbble alt"><span class="label">Dribbble</span></a></li>
+							</ul>
+						</section>
+						<p class="copyright">&copy; Untitled. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+					</footer>
+
+			</div> -->
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+			<script src="countdownClock.js"></script>
+
+	</body>
+</html>
