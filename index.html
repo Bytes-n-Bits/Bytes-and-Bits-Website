@@ -14,6 +14,7 @@
 		<link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 		<link href="https://fonts.googleapis.com/css?family=Bebas+Neue|Roboto&display=swap" 		rel="stylesheet">
 		<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+		
 
 
 
@@ -157,47 +158,48 @@ ul li ul li {
 					</header>
 
 				<!-- TO DO: Countdown clock -->
-				<p class = "countdownClock">Countdown to <img src = "images/CBL-logo.png" width="10%" height="10%"></p>
+				<!-- <p class = "countdownClock">Countdown to <img src = "images/CBL-logo.png" width="10%" height="10%"></p>
 				<hr class = "original">
-				<div id="countdownClock"></div>
+				<div id="countdownClock"></div> -->
 
 				<script>
-				// Set the date we're counting down to
-				var countDownDate = new Date("Feb 3, 2020 08:00:00").getTime();
+				// // Set the date we're counting down to
+				// var countDownDate = new Date("Feb 3, 2020 08:00:00").getTime();
 				
-				// Update the count down every 1 second
-				var x = setInterval(function() {
+				// // Update the count down every 1 second
+				// var x = setInterval(function() {
 				
-				  // Get today's date and time
-				  var now = new Date().getTime();
+				//   // Get today's date and time
+				//   var now = new Date().getTime();
 					
-				  // Find the distance between now and the count down date
-				  var distance = countDownDate - now;
+				//   // Find the distance between now and the count down date
+				//   var distance = countDownDate - now;
 					
-				  // Time calculations for days, hours, minutes and seconds
-				  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+				//   // Time calculations for days, hours, minutes and seconds
+				//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+				//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+				//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+				//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 					
-				  // Output the result in an element with id="demo"
-				  document.getElementById("countdownClock").innerHTML = days + "d " + hours + "h "
-				  + minutes + "m " + seconds + "s ";
+				//   // Output the result in an element with id="demo"
+				//   document.getElementById("countdownClock").innerHTML = days + "d " + hours + "h "
+				//   + minutes + "m " + seconds + "s ";
 					
-				  // If the count down is over, write some text 
-				  if (distance < 0) {
-					clearInterval(x);
-					document.getElementById("demo").innerHTML = "EXPIRED";
-				  }
-				}, 1000);
-				</script>
+				//   // If the count down is over, write some text 
+				//   if (distance < 0) {
+				// 	clearInterval(x);
+				// 	document.getElementById("demo").innerHTML = "EXPIRED";
+				//   }
+				// }, 1000);
+				// </script>
 				
 
 				<!-- TO DO:  all navs on one row -->
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<li><a href="#intro" class="active">Upcoming Events!</a></li>
+							<!-- <li><a href="#intro" class="active">Upcoming Events!</a></li> -->
+							<li><a href="#intro" class="active">Happening Now!</a></li>
 							<li><a href="#first">Web or App Development</a></li>
 							<li><a href="#second">Alexa Development</a></li>
 							<li><a href="#third">AR/VR Development</a></li>
@@ -220,17 +222,20 @@ ul li ul li {
 								<div class="spotlight">
 									<div class="content">
 										<header class="major">
-											<h1 style = "font-weight: 900">Upcoming Events!</h1>
+											<h1 style = "font-weight: 900">Happening Now!</h1>
 											<img src = "images/CBL logo.JPG" width="100%vw" >
 										</header>
 										<p><a href="http://createbuildlearnaws.s3-website-us-east-1.amazonaws.com/">Create - Build - Learn</a> is an introduction to AWS Services focusing on topics like Augmented Reality/Virtual Reality (AR/VR), RoboMaker, IoT and Gaming</p>
 										<p>Through <a href = "https://aws.amazon.com/education/awseducate/14-and-older/">Amazon Web Services (AWS) Educate</a> is students and educators have access to learning resources for the most in-demand cloud skills to prepare for rewarding careers in growing fields. AWS Educate also connects hiring companies to qualified student job seekers with the AWS Educate Job Board</p>
+										<p>Subscribe to <a href = "https://youtu.be/43IErrR5KAg">Create-Build-Learn</a> series on YouTube!</p>
 										<ul class="actions">
 											<li><a href="createBuildLearn.html" class="buttonCustom">Learn More</a></li>
+											
 										</ul>
 									</div>
 									<!-- TO DO:  update image class so not circle -->
-									<span class="video"></span><iframe width="560" height="315" src="https://www.youtube.com/embed/zPz09_S9hJ0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></span>
+									
+									<span class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PLE-O-13_nGHvKeGzHYxrrrthZ4r_XTvij" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 								</div>
 							</section>
 
@@ -268,15 +273,8 @@ ul li ul li {
 									<ul class="actions special">
 										<li><a href="mailto:bytesandbits@gmail.com?subject=Hire Web App Development" class="buttonCustom">Email to Learn More</a></li>
 									
-
-																			
-										<li><a href="sms://+17403001684?body=I%27m%20interested%20in%20Hiring%Web/App%Developer.%Please%20contact%20me." class = "buttonCustom">Send a SMS message to Learn More</a>
-										</li>
-
-
-
-
-
+																		
+										
 									</ul>
 								</footer>
 							</section>
@@ -318,8 +316,6 @@ ul li ul li {
 										<li><a href="mailto:bytesandbits@gmail.com?Subject=Hire Alexa Developer" class="buttonCustom">Email to Learn More</a></li>
 									
 									
-										<li><a href="sms://+17403001684?body=I%27m%20interested%20in%20Hiring%Alexa%Developer.%Please%20contact%20me." class ="buttonCustom">Send a SMS message to Learn More</a>
-											</li>
 									</ul>
 								</footer>
 							</section>
@@ -358,9 +354,7 @@ ul li ul li {
 								<ul class="actions special">
 									<li><a href="mailto:bytesandbits@gmail.com?Subject=Hire AR/VR Developer" class="buttonCustom">Email to Learn More</a></li>
 									
-									
-									<li><a href="sms://+17403001684?body=I%27m%20interested%20in%20Hiring%AR/VR%Developer.%Please%20contact%20me." class ="buttonCustom">Send a SMS message to Learn More</a>
-											</li>
+								
 								</ul>
 								</footer>
 
@@ -382,9 +376,7 @@ ul li ul li {
 									<ul class="actions special">
 									<li><a href="mailto:bytesandbits@gmail.com?Subject=Hire AWS for Cloud Services or Certification" class="buttonCustom">Email to Learn More</a></li>
 									
-									
-									<li><a href="sms://+17403001684?body=I%27m%20interested%20in%20Hiring%AWS%for%Cloud%Services%or%Certification.%Please%20contact%20me." class = "buttonCustom">Send a SMS message to Learn More</a>
-											</li>
+								
 									</ul>
 								</footer>
 							</section>
@@ -401,14 +393,16 @@ ul li ul li {
 										<p>Interested in hiring?</p>
 
 										
-										<a href="generic.html" class="buttonCustom primary">Get Started</a>
-									</li>
+										<a href="mailto:penwellt@bytesabits.com?Subject=Looking to hire" class="buttonCustom">Email to Learn More</a></li>
+									
 
 									<li>
-										<span class="icon major style2 fa-users"></span>
+										<span class="icon major style2 fa-user"></span>
 										<p>Interested in joining our team?</p>
 
-										<a href="generic.html" class="buttonCustom">Learn More</a>
+										<a href="mailto:penwellt@bytesabits.com?Subject=Looking to learn" class="buttonCustom">Email to Learn More</a></li>
+
+									
 									</li>
 							</ul>
 								</header>
