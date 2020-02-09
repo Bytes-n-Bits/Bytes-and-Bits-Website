@@ -45,7 +45,8 @@
 		font-size: xx-large;
 		background-color: white;
 		padding: 10%;
-		margin-bottom: -140px;
+        margin-bottom: -140px;
+        border-radius: 20px;
 		
 
 		
@@ -137,6 +138,7 @@ ul li ul li {
 	
 	</head>
 	<body>
+        
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -144,80 +146,95 @@ ul li ul li {
 				
 				<!-- Header -->
 					<header id="header" class="alt">
-						
-						<!-- TO DO:  customize font -->
-						<h1 id = "bytesandbits">Bytes and Bits <i class="fa fa-code" aria-hidden="true"></i>
+
+                        <h1 id = "bytesandbits">Bytes and Bits <i class="fa fa-code" aria-hidden="true"></i>
+                        <h2>Bytes & Bits is an organization that focuses teaching, learning and connecting.</h2>
 						</h1>
-						<!-- TO DO:  use FA icons instead of - -->
-						<!-- <p>Web Developer  &nbsp;  <i class="fa fa-square" aria-hidden="true" ></i> &nbsp;
-							App Developer &nbsp;   <i class="fa fa-square" aria-hidden="true"></i> &nbsp;
-							Alexa Developer &nbsp;   <i class="fa fa-square" aria-hidden="true"></i>  &nbsp;
-							AR/VR Developer  &nbsp;  <i class="fa fa-square" aria-hidden="true"></i> &nbsp;
-							AWS Accredited Instructor
-						</p> -->
+						
+					
+                        
+						
 					</header>
 
-				<!-- TO DO: Countdown clock -->
-				<!-- <p class = "countdownClock">Countdown to <img src = "images/CBL-logo.png" width="10%" height="10%"></p>
-				<hr class = "original">
-				<div id="countdownClock"></div> -->
+				
 
-				<script>
-				// // Set the date we're counting down to
-				// var countDownDate = new Date("Feb 3, 2020 08:00:00").getTime();
 				
-				// // Update the count down every 1 second
-				// var x = setInterval(function() {
-				
-				//   // Get today's date and time
-				//   var now = new Date().getTime();
-					
-				//   // Find the distance between now and the count down date
-				//   var distance = countDownDate - now;
-					
-				//   // Time calculations for days, hours, minutes and seconds
-				//   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-				//   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-				//   var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-				//   var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-					
-				//   // Output the result in an element with id="demo"
-				//   document.getElementById("countdownClock").innerHTML = days + "d " + hours + "h "
-				//   + minutes + "m " + seconds + "s ";
-					
-				//   // If the count down is over, write some text 
-				//   if (distance < 0) {
-				// 	clearInterval(x);
-				// 	document.getElementById("demo").innerHTML = "EXPIRED";
-				//   }
-				// }, 1000);
-				// </script>
 				
 
 				<!-- TO DO:  all navs on one row -->
 				<!-- Nav -->
 					<nav id="nav">
 						<ul>
-							<!-- <li><a href="#intro" class="active">Upcoming Events!</a></li> -->
+                            <!-- <li><a href="#intro" class="active">Upcoming Events!</a></li> -->
+                            <li><a href="#home" class="active">Home</a></li>
 							<li><a href="#intro" class="active">Happening Now!</a></li>
 							<li><a href="#first">Web or App Development</a></li>
 							<li><a href="#second">Alexa Development</a></li>
 							<li><a href="#third">AR/VR Development</a></li>
 							<li><a href="#fourth">AWS and Cloud Computing Training</a></li>
 						</ul>
-							    <!-- TO DO - fix Dropdown Nav-->
-								<!-- <li><a href="#" aria-haspopup="true">Other</a>
-									<ul class="dropdown" aria-label="submenu">
-									  <li><a href="PreparingforOffline.html">Preparing for Offline</a></li> -->
-								</ul>
-							</li>
-						</ul>
+							    
 					</nav>
 
 				<!-- Main -->
 					<div id="main">
 
-						<!-- Introduction -->
+						<!-- Teaching -->
+							<section id="home" class="main">
+								<div class="spotlight">
+									<div class="content">
+
+                                        <h1>Teaching</h1>
+                                        <p>Bytes and Bits focuses on education and teaching skills related to</p>
+                                            <ul>
+                                                <li>Web development</li>
+                                                <li>Wordpress development</li>
+                                                <li>Webflow development</li>
+                                                <li>Mobile app development</li>
+                                                <li>Augmented Reality</li>
+                                                <li>Virtual Reality</li>
+                                                <li>Alexa Voice Development</li>
+                                                <li>Amazon Web Services (AWS)</li>
+                                            </ul>
+										
+									</div>
+									
+							</section>
+
+						<!-- creates a thicker divider between upcoming events and other sections -->
+						<hr>
+
+							
+                        <!-- Learning -->
+                        <section id="home" class="main">
+                            <div class="spotlight">
+                                <div class="content">
+
+                                    <h1>Learning</h1>
+                                    <p>Bytes and Bits lives by the motto of being a lifelong learner.  As technology changes and we work on improving our skills sets.  Learning is best done in groups.  Our study sessions are open to all!</p>
+
+                                </div>
+                                
+                        </section>
+							
+						<hr>
+
+                        <!-- Connecting Section -->
+                        <section id="home" class="main">
+                            <div class="spotlight">
+                                <div class="content">
+
+                                    <h1>Connecting</h1>
+                                    <p>We're looking to connect businesses, non-profits and start-ups with developers.</p>
+                                    <p>What makes Bytes and Bits different is that we're connecting skills with the demand.  Businesses looking for freelancers are able to connect with freelancers that are best qualified for their needs.</p>
+
+                                </div>
+                                
+                        </section>
+							
+
+                        <hr>
+                	<!-- Introduction -->
 							<section id="intro" class="main">
 								<div class="spotlight">
 									<div class="content">
@@ -382,6 +399,40 @@ ul li ul li {
 							</section>
 
 			<hr>
+
+						<!-- Get Started -->
+							<section id="cta" class="main special">
+								<header>
+									<h2 class = "subheading">Learn More</h2>
+							<ul class = "features">
+									<li>
+										<span class="icon major style2 fa-user-circle"></span>
+										<p>Interested in hiring?</p>
+
+										
+										<a href="mailto:penwellt@bytesabits.com?Subject=Looking to hire" class="buttonCustom">Email to Learn More</a></li>
+									
+
+									<li>
+										<span class="icon major style2 fa-user"></span>
+										<p>Interested in joining our team?</p>
+
+										<a href="mailto:penwellt@bytesabits.com?Subject=Looking to learn" class="buttonCustom">Email to Learn More</a></li>
+
+									
+									</li>
+							</ul>
+								</header>
+
+							</section>
+
+					</div>
+
+
+					  </div>	
+
+
+					
 
 						<!-- Get Started -->
 							<section id="cta" class="main special">
